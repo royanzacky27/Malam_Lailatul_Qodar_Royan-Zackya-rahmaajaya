@@ -20,7 +20,7 @@ body {
 
 .header {
   width: 100%;
-  background-color: #2f7131;
+  background-color: #28612a;
   color: #ffffff;
   text-align: center;
   padding: 32px 0;
@@ -58,47 +58,76 @@ body {
   line-height: 1.6;
 }
 
-.button-container {
-  margin-top: 32px;
+.button-container,
+.reset-button-container {
+  margin-top: 16px;
   width: 100%;
   max-width: 400px;
+  display: flex;
+  justify-content: center;
 }
 
-.button-container button {
-  width: 100%;
-  background-color: #2f7131;
-  color: #ffffff;
-  font-size: 18px;
+.big-round-button {
+  width: 250px; /* Lebar tombol */
+  height: 250px; /* Tinggi tombol */
+  padding: 0; /* Menghilangkan padding */
+  font-size: 18px; /* Ukuran font yang lebih besar */
   font-weight: 600;
-  padding: 16px;
   border: none;
-  border-radius: 12px;
+  border-radius: 100%; /* Membuat tombol bulat */
+  background-color: #19551a; /* Warna hijau */
+  color: #ffffff; /* Teks putih */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.button-container button:hover {
-  background-color: #2f7131;
+.big-round-button:hover {
+  background-color: #1d5c1e; /* Warna hijau */
 }
 
-.reset-button {
-  margin-top: 16px;
-  font-size: 14px;
-  color: #ff4444;
-  text-decoration: underline;
-  background: none;
+.small-button {
+  width: auto; /* Lebar menyesuaikan konten */
+  padding: 8px 16px; /* Padding yang lebih kecil */
+  font-size: 14px; /* Ukuran font yang lebih kecil */
+  font-weight: 600;
   border: none;
+  border-radius: 8px; /* Sudut yang lebih kecil */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
+.reset-button {
+  background-color: #ff4444; /* Warna merah untuk tombol Reset */
+  color: #ffffff;
+}
+
 .reset-button:hover {
-  color: #cc0000;
+  background-color: #9a1313; /* Warna merah yang lebih gelap saat hover */
 }
 
 .footer {
-  margin-top: 64px; /* Tambahkan margin-top yang lebih besar */
+  margin-top: 48px;
   text-align: center;
   font-size: 14px;
   color: #666666;
-  padding-bottom: 20%;
+  padding-bottom: 0%;
+}
+
+.footer p {
+  margin: 8px 0;
+}
+
+.footer a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }

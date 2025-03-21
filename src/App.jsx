@@ -29,17 +29,31 @@ function App() {
 
       {/* Tombol Tambah */}
       <div className="button-container">
-        <button onClick={handleAdd}>Tambah 1</button>
+        <button onClick={handleAdd} className="big-round-button">
+          Tambah 1
+        </button>
       </div>
 
       {/* Reset Button */}
-      <button className="reset-button" onClick={handleReset}>
-        Reset
-      </button>
+      <div className="reset-button-container">
+        <button onClick={handleReset} className="small-button reset-button">
+          Reset
+        </button>
+      </div>
 
       {/* Footer Pesan */}
       <footer className="footer">
-        Kerjakan karena Allah. Mugo-mugo Allah paring barokah 🤲
+        <p>Kerjakan karena Allah. Mugo-mugo Allah paring barokah 🤲</p>
+        <p>
+          By
+          <a
+            href="https://www.instagram.com/royanzacky/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            @royanzacky
+          </a>{" "}
+        </p>
       </footer>
     </div>
   );
