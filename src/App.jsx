@@ -47,11 +47,11 @@ function App() {
         <p>
           By
           <a
-            href="https://www.instagram.com/royanzacky/"
+            // href="https://www.instagram.com/royanzacky/"
             target="_blank"
             rel="noreferrer"
           >
-            @royanzacky
+            royanzacky
           </a>{" "}
         </p>
       </footer>
