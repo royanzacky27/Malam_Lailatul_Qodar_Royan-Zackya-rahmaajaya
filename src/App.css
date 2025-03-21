@@ -1,0 +1,104 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 24px;
+}
+
+.header {
+  width: 100%;
+  background-color: #2f7131;
+  color: #ffffff;
+  text-align: center;
+  padding: 32px 0;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "serif";
+}
+
+.header p {
+  font-size: 64px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.content {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.content p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 16px;
+}
+
+.content .doa {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.button-container {
+  margin-top: 32px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.button-container button {
+  width: 100%;
+  background-color: #2f7131;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #2f7131;
+}
+
+.reset-button {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #ff4444;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  color: #cc0000;
+}
+
+.footer {
+  margin-top: 64px; /* Tambahkan margin-top yang lebih besar */
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+  padding-bottom: 20%;
+}
